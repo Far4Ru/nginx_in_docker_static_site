@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    image: far4ru-site:local
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+    restart: unless-stopped

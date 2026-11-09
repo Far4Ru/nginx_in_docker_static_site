@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - ELAYCODE</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/services.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">ELAYCODE</a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link">Главная</a></li>
+                    <li><a href="services.html" class="header__nav-link">Услуги</a></li>
+                    <li><a href="portfolio.html" class="header__nav-link">Портфолио</a></li>
+                    <li><a href="process.html" class="header__nav-link">Процесс</a></li>
+                </ul>
+            </nav>
+            <a href="start-project.html" class="btn btn--primary">Рассчитать стоимость</a>
+        </div>
+    </header>
+
+    <section class="services-hero">
+        <div class="container">
+            <h1>Наши услуги</h1>
+        </div>
+    </section>
+
+    <div class="services-detailed">
+        <div class="container">
+            <div class="services-detailed__grid">
+                <article class="service-card-detailed" id="landing">
+                    <h2>Лендинг</h2>
+                    <p class="service-card-detailed__price">от 50 000 руб.</p>
+                    <ul class="service-card-detailed__list">
+                        <li class="service-card-detailed__list-item">Прототипирование и дизайн</li>
+                        <li class="service-card-detailed__list-item">Адаптивная верстка</li>
+                        <li class="service-card-detailed__list-item">Интеграция с CRM</li>
+                        <li class="service-card-detailed__list-item">Базовая SEO-оптимизация</li>
+                        <li class="service-card-detailed__list-item">Настройка аналитики</li>
+                    </ul>
+                    <button class="btn btn--primary"
+                        onclick="location.href='start-project.html?service=landing'">Заказать лендинг</button>
+                </article>
+
+                <article class="service-card-detailed" id="shop">
+                    <h2>Интернет-магазин</h2>
+                    <p class="service-card-detailed__price">от 150 000 руб.</p>
+                    <ul class="service-card-detailed__list">
+                        <li class="service-card-detailed__list-item">Дизайн UI/UX</li>
+                        <li class="service-card-detailed__list-item">Frontend и backend разработка</li>
+                        <li class="service-card-detailed__list-item">Интеграция платежных систем</li>
+                        <li class="service-card-detailed__list-item">Панель администратора</li>
+                        <li class="service-card-detailed__list-item">Мобильная версия</li>
+                    </ul>
+                    <button class="btn btn--primary" onclick="location.href='start-project.html?service=shop'">Заказать
+                        магазин</button>
+                </article>
+
+                <article class="service-card-detailed" id="corporate">
+                    <h2>Корпоративный сайт</h2>
+                    <p class="service-card-detailed__price">от 100 000 руб.</p>
+                    <ul class="service-card-detailed__list">
+                        <li class="service-card-detailed__list-item">Многостраничная структура</li>
+                        <li class="service-card-detailed__list-item">Система управления контентом</li>
+                        <li class="service-card-detailed__list-item">Блог и новостная лента</li>
+                        <li class="service-card-detailed__list-item">Формы обратной связи</li>
+                        <li class="service-card-detailed__list-item">Интеграция с соцсетями</li>
+                    </ul>
+                    <button class="btn btn--primary"
+                        onclick="location.href='start-project.html?service=corporate'">Заказать сайт</button>
+                </article>
+
+                <article class="service-card-detailed" id="mobile">
+                    <h2>Мобильное приложение</h2>
+                    <p class="service-card-detailed__price">от 300 000 руб.</p>
+                    <ul class="service-card-detailed__list">
+                        <li class="service-card-detailed__list-item">Нативная разработка iOS/Android</li>
+                        <li class="service-card-detailed__list-item">UI/UX дизайн</li>
+                        <li class="service-card-detailed__list-item">Тестирование и публикация</li>
+                        <li class="service-card-detailed__list-item">Интеграция с API</li>
+                        <li class="service-card-detailed__list-item">Техническая поддержка</li>
+                    </ul>
+                    <button class="btn btn--primary"
+                        onclick="location.href='start-project.html?service=mobile'">Заказать приложение</button>
+                </article>
+
+                <article class="service-card-detailed" id="support">
+                    <h2>Техническая поддержка</h2>
+                    <p class="service-card-detailed__price">от 15 000 руб./мес</p>
+                    <ul class="service-card-detailed__list">
+                        <li class="service-card-detailed__list-item">Регулярное обновление</li>
+                        <li class="service-card-detailed__list-item">Исправление ошибок</li>
+                        <li class="service-card-detailed__list-item">Консультации</li>
+                        <li class="service-card-detailed__list-item">Резервное копирование</li>
+                        <li class="service-card-detailed__list-item">Мониторинг безопасности</li>
+                    </ul>
+                    <button class="btn btn--primary"
+                        onclick="location.href='start-project.html?service=support'">Заказать поддержку</button>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <address class="footer__contacts">
+                        <p><a href="mailto:info@elaycode.ru" class="footer__nav-link">info@elaycode.ru</a></p>
+                        <p><a href="tel:+79999999999" class="footer__nav-link">+7 (999) 999-99-99</a></p>
+                    </address>
+                </div>
+                <div class="footer__column">
+                    <h3>Навигация</h3>
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html" class="footer__nav-link">Главная</a></li>
+                            <li><a href="services.html" class="footer__nav-link">Услуги</a></li>
+                            <li><a href="portfolio.html" class="footer__nav-link">Портфолио</a></li>
+                            <li><a href="process.html" class="footer__nav-link">Процесс</a></li>
+                            <li><a href="start-project.html" class="footer__nav-link">Начать проект</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3>Соцсети</h3>
+                    <ul class="footer__social-list">
+                        <li><a href="#" class="footer__social-link">VK</a></li>
+                        <li><a href="#" class="footer__social-link">Telegram</a></li>
+                        <li><a href="#" class="footer__social-link">Max</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2025 ELAYCODE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - ELAYCODE</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">ELAYCODE</a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link">Главная</a></li>
+                    <li><a href="services.html" class="header__nav-link">Услуги</a></li>
+                    <li><a href="portfolio.html" class="header__nav-link">Портфолио</a></li>
+                    <li><a href="process.html" class="header__nav-link">Процесс</a></li>
+                </ul>
+            </nav>
+            <a href="start-project.html" class="btn btn--primary">Рассчитать стоимость</a>
+        </div>
+    </header>
+
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>Наши работы</h1>
+            <p>Реализованные проекты, которые приносят результат нашим клиентам</p>
+        </div>
+    </section>
+
+    <div class="portfolio">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="*">Все проекты</button>
+                <button class="filter-btn" data-filter=".landing">Лендинги</button>
+                <button class="filter-btn" data-filter=".shop">Интернет-магазины</button>
+                <button class="filter-btn" data-filter=".corporate">Корпоративные сайты</button>
+                <button class="filter-btn" data-filter=".mobile">Мобильные приложения</button>
+            </div>
+
+            <div class="portfolio__grid">
+                <article class="portfolio-item landing">
+                    <figure class="portfolio-item__image-container">
+                        <img src="./images/project_6.png" alt="Лендинг для строительной компании"
+                            class="portfolio-item__image">
+                    </figure>
+                    <div class="portfolio-item__content">
+                        <h2>Задача</h2>
+                        <p>Увеличить количество заявок на расчет стоимости строительных услуг</p>
+                        <h2>Решение</h2>
+                        <p>Разработали продающий лендинг с калькулятором стоимости и формой заявки</p>
+                        <p class="portfolio-item__result">Результат: +215% заявок, стоимость лида снизилась на 60%</p>
+                        <a href="https://example.com" target="_blank" class="portfolio-item__link">
+                            Посмотреть сайт ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="portfolio-item shop">
+                    <figure class="portfolio-item__image-container">
+                        <img src="./images/project_5.png" alt="Интернет-магазин электроники"
+                            class="portfolio-item__image">
+                    </figure>
+                    <div class="portfolio-item__content">
+                        <h2>Задача</h2>
+                        <p>Создать удобную платформу для онлайн-продаж электроники</p>
+                        <h2>Решение</h2>
+                        <p>Разработали интернет-магазин с системой фильтров, отзывов и интеграцией с 1С</p>
+                        <p class="portfolio-item__result">Результат: конверсия 3.8%, средний чек вырос на 25%</p>
+                        <a href="https://example-shop.com" target="_blank" class="portfolio-item__link">
+                            Посмотреть сайт ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="portfolio-item corporate">
+                    <figure class="portfolio-item__image-container">
+                        <img src="./images/project_4.png" alt="Корпоративный сайт IT-компании"
+                            class="portfolio-item__image">
+                    </figure>
+                    <div class="portfolio-item__content">
+                        <h2>Задача</h2>
+                        <p>Представить компанию как надежного технологического партнера</p>
+                        <h2>Решение</h2>
+                        <p>Создали современный корпоративный сайт с кейсами, блогом и системой управления</p>
+                        <p class="portfolio-item__result">Результат: трафик вырос в 2 раза, время на сайте +40%</p>
+                        <a href="https://example-corp.com" target="_blank" class="portfolio-item__link">
+                            Посмотреть сайт ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="portfolio-item mobile">
+                    <figure class="portfolio-item__image-container">
+                        <img src="./images/project_3.png" alt="Мобильное приложение для доставки еды"
+                            class="portfolio-item__image">
+                    </figure>
+                    <div class="portfolio-item__content">
+                        <h2>Задача</h2>
+                        <p>Разработать удобное мобильное приложение для службы доставки еды</p>
+                        <h2>Решение</h2>
+                        <p>Создали нативное приложение для iOS и Android с системой заказов и оплаты</p>
+                        <p class="portfolio-item__result">Результат: 50K+ скачиваний, оценка 4.8 в App Store</p>
+                        <a href="https://apps.apple.com" target="_blank" class="portfolio-item__link">
+                            Скачать в App Store ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="portfolio-item landing">
+                    <figure class="portfolio-item__image-container">
+                        <img src="./images/project_2.png" alt="Лендинг для онлайн-курсов" class="portfolio-item__image">
+                    </figure>
+                    <div class="portfolio-item__content">
+                        <h2>Задача</h2>
+                        <p>Увеличить продажи онлайн-курсов по программированию</p>
+                        <h2>Решение</h2>
+                        <p>Разработали лендинг с программой курса, отзывами и системой оплаты</p>
+                        <p class="portfolio-item__result">Результат: конверсия 12%, продажи выросли в 3 раза</p>
+                        <a href="https://example-courses.com" target="_blank" class="portfolio-item__link">
+                            Посмотреть сайт ↗
+                        </a>
+                    </div>
+                </article>
+
+                <article class="portfolio-item shop">
+                    <figure class="portfolio-item__image-container">
+                        <img src="./images/project_1.png" alt="Интернет-магазин одежды" class="portfolio-item__image">
+                    </figure>
+                    <div class="portfolio-item__content">
+                        <h2>Задача</h2>
+                        <p>Создать премиальный интернет-магазин модной одежды</p>
+                        <h2>Решение</h2>
+                        <p>Разработали магазин с визуальным конструктором и системой рекомендаций</p>
+                        <p class="portfolio-item__result">Результат: повторные покупки 45%, LTV клиента +60%</p>
+                        <a href="https://example-fashion.com" target="_blank" class="portfolio-item__link">
+                            Посмотреть сайт ↗
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <address class="footer__contacts">
+                        <p><a href="mailto:info@elaycode.ru" class="footer__nav-link">info@elaycode.ru</a></p>
+                        <p><a href="tel:+79999999999" class="footer__nav-link">+7 (999) 999-99-99</a></p>
+                    </address>
+                </div>
+                <div class="footer__column">
+                    <h3>Навигация</h3>
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html" class="footer__nav-link">Главная</a></li>
+                            <li><a href="services.html" class="footer__nav-link">Услуги</a></li>
+                            <li><a href="portfolio.html" class="footer__nav-link">Портфолио</a></li>
+                            <li><a href="process.html" class="footer__nav-link">Процесс</a></li>
+                            <li><a href="start-project.html" class="footer__nav-link">Начать проект</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3>Соцсети</h3>
+                    <ul class="footer__social-list">
+                        <li><a href="#" class="footer__social-link">VK</a></li>
+                        <li><a href="#" class="footer__social-link">Telegram</a></li>
+                        <li><a href="#" class="footer__social-link">Max</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2025 ELAYCODE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/filter.js"></script>
+</body>
+
+</html>

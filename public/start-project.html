@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начать проект - ELAYCODE</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/start-project.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo">ELAYCODE</a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="index.html" class="header__nav-link">Главная</a></li>
+                    <li><a href="services.html" class="header__nav-link">Услуги</a></li>
+                    <li><a href="portfolio.html" class="header__nav-link">Портфолио</a></li>
+                    <li><a href="process.html" class="header__nav-link">Процесс</a></li>
+                </ul>
+            </nav>
+            <a href="start-project.html" class="btn btn--primary">Рассчитать стоимость</a>
+        </div>
+    </header>
+
+    <section class="form-hero">
+        <div class="container">
+            <h1>Расскажите о вашем проекте</h1>
+            <p>Заполните форму, и мы свяжемся с вами для бесплатной консультации и расчета стоимости</p>
+        </div>
+    </section>
+
+    <div class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <form id="project-form" class="project-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Имя *</label>
+                        <input type="text" id="name" name="user_name" class="form-input" required minlength="2"
+                            placeholder="Ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company" class="form-label">Компания</label>
+                        <input type="text" id="company" name="company" class="form-input"
+                            placeholder="Название компании">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email *</label>
+                        <input type="email" id="email" name="user_email" class="form-input" required
+                            placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (999) 999-99-99">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" class="form-label">Какая услуга интересует *</label>
+                        <select id="service" name="service" class="form-select" required>
+                            <option value="">Выберите услугу</option>
+                            <option value="landing">Лендинг</option>
+                            <option value="shop">Интернет-магазин</option>
+                            <option value="corporate">Корпоративный сайт</option>
+                            <option value="mobile">Мобильное приложение</option>
+                            <option value="support">Техническая поддержка</option>
+                            <option value="consultation">Консультация</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget" class="form-label">Бюджет проекта</label>
+                        <select id="budget" name="budget" class="form-select">
+                            <option value="">Не определен</option>
+                            <option value="50-100">50 000 - 100 000 руб.</option>
+                            <option value="100-200">100 000 - 200 000 руб.</option>
+                            <option value="200-500">200 000 - 500 000 руб.</option>
+                            <option value="500+">от 500 000 руб.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deadline" class="form-label">Желаемые сроки</label>
+                        <select id="deadline" name="deadline" class="form-select">
+                            <option value="">Не срочно</option>
+                            <option value="1month">1 месяц</option>
+                            <option value="2month">2 месяца</option>
+                            <option value="3month">3 месяца</option>
+                            <option value="urgent">Срочно</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" class="form-label">Опишите кратко ваш проект</label>
+                        <textarea id="description" name="message" class="form-textarea" rows="5" required
+                            placeholder="Расскажите о вашем бизнесе, целях проекта, пожеланиях к функционалу..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" name="agreement" required>
+                            Я соглашаюсь с обработкой персональных данных
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary btn--block">Отправить бриф на расчет</button>
+                </form>
+
+                <aside class="form-aside">
+                    <h2>Что вас ждет после отправки формы?</h2>
+                    <ul class="form-aside__list">
+                        <li class="form-aside__list-item">Бесплатная консультация в течение 24 часов</li>
+                        <li class="form-aside__list-item">Детальный расчет стоимости проекта</li>
+                        <li class="form-aside__list-item">Предложение по срокам реализации</li>
+                        <li class="form-aside__list-item">Примеры похожих проектов из портфолио</li>
+                    </ul>
+
+                    <div class="form-contacts">
+                        <h3>Или свяжитесь с нами напрямую:</h3>
+                        <address>
+                            <p><strong>Email:</strong><br>
+                                <a href="mailto:info@elaycode.ru">info@elaycode.ru</a>
+                            </p>
+
+                            <p><strong>Телефон:</strong><br>
+                                <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                            </p>
+
+                            <p><strong>Время работы:</strong><br>
+                                Пн-Пт: 9:00 - 18:00</p>
+                        </address>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <address class="footer__contacts">
+                        <p><a href="mailto:info@elaycode.ru" class="footer__nav-link">info@elaycode.ru</a></p>
+                        <p><a href="tel:+79999999999" class="footer__nav-link">+7 (999) 999-99-99</a></p>
+                    </address>
+                </div>
+                <div class="footer__column">
+                    <h3>Навигация</h3>
+                    <nav>
+                        <ul class="footer__nav-list">
+                            <li><a href="index.html" class="footer__nav-link">Главная</a></li>
+                            <li><a href="services.html" class="footer__nav-link">Услуги</a></li>
+                            <li><a href="portfolio.html" class="footer__nav-link">Портфолио</a></li>
+                            <li><a href="process.html" class="footer__nav-link">Процесс</a></li>
+                            <li><a href="start-project.html" class="footer__nav-link">Начать проект</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h3>Соцсети</h3>
+                    <ul class="footer__social-list">
+                        <li><a href="#" class="footer__social-link">VK</a></li>
+                        <li><a href="#" class="footer__social-link">Telegram</a></li>
+                        <li><a href="#" class="footer__social-link">Max</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>&copy; 2025 ELAYCODE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="thankYouModal" class="modal">
+        <div class="modal__container">
+            <span class="modal__close">&times;</span>
+            <div class="modal__content">
+                <h2 class="thank-you__title">Спасибо!</h2>
+                <p class="thank-you__message">Ваша заявка успешно отправлена. Мы свяжемся с вами в
+                    течение 24 часов для
+                    уточнения деталей и бесплатной консультации.</p>
+
+                <div class="thank-you__next-steps">
+                    <h2>Что будет дальше?</h2>
+                    <ul>
+                        <li>Наш менеджер свяжется с вами для уточнения деталей проекта</li>
+                        <li>Проведем бесплатную консультацию и анализ ваших задач</li>
+                        <li>Подготовим коммерческое предложение с расчетом стоимости</li>
+                        <li>Предложим оптимальные сроки реализации проекта</li>
+                    </ul>
+                </div>
+
+                <div class="thank-you__contacts">
+                    <p>Если у вас есть срочные вопросы, вы можете связаться с нами напрямую:</p>
+                    <p>
+                        <strong>Телефон:</strong> <a href="tel:+79999999999">+7 (999) 999-99-99</a><br>
+                        <strong>Email:</strong> <a href="mailto:info@elaycode.ru">info@elaycode.ru</a>
+                    </p>
+                </div>
+
+                <div class="thank-you__actions">
+                    <a href="index.html" class="btn btn--primary">Вернуться на главную</a>
+                    <a href="portfolio.html" class="btn btn--secondary">Посмотреть наши работы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/emailjs-config.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form_validation.js"></script>
+</body>
+
+</html>
